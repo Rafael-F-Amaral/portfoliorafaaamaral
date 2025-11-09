@@ -1,12 +1,14 @@
 // sanity.config.ts
 import {defineConfig} from 'sanity'
 import {structureTool} from 'sanity/structure'
-import project from './schemas/project' // Importa o arquivo que você criou
-import post from './schemas/post'       // Importa o arquivo que você criou
+
+// Caminhos corretos, baseados nas suas imagens:
+import project from './schemaTypes/project' 
+import post from './schemaTypes/post'       
 
 export default defineConfig({
   name: 'default',
-  title: 'autproject', // Você pode mudar isso se quiser
+  title: 'autproject',
 
   projectId: 'bq4zaaoy', // SEU ID DO PROJETO
   dataset: 'production',   // SEU DATASET
